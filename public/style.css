@@ -1,0 +1,72 @@
+.navbar-inverse.nav-upper {
+    height: 50px;
+}
+
+.navbar-inverse.nav-upper ul {
+    float: right;
+    display: table;
+    padding: 5px;
+}
+
+.navbar-inverse.nav-upper .navbar-upper>li {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.navbar-inverse.nav-upper .navbar-upper>li>a {
+    color: #e90052;
+}
+
+.standings {
+    margin: 10%;
+    background-color: #00ff87;
+}
+
+.navi {
+    background-color: #e90052;
+    border: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .navbar.navbar-lower .navbar-nav {
+        margin-left: 200px;
+    }
+}
+
+.navbar-logo {
+    background-image: url("../img/plloge.png");
+    width: 151px;
+    height: 90px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    z-index: 1051;
+}
+
+.club-logo {
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    box-sizing: border-box;
+}
+
+.pl {
+    font-size: 20px;
+}
+
+.leftside {
+    width: 70%;
+    height: 900px;
+    background-color: #38003c;
+}
+
+.rightside {
+    width: 30%;
+    height: 900px;
+    background-color: #38003c;
+}
