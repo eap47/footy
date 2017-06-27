@@ -18,7 +18,7 @@
     color: #e90052;
 }
 
-.ourbox {
+.standings {
     margin: 10%;
     background-color: #00ff87;
 }
@@ -59,13 +59,13 @@
     font-size: 20px;
 }
 
-.comparison {
+.leftside {
     width: 70%;
     height: 900px;
     background-color: #38003c;
 }
 
-.standings {
+.rightside {
     width: 30%;
     height: 600px;
     background-color: #38003c;
