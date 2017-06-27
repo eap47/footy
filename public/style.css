@@ -5,7 +5,6 @@
 .navbar-inverse.nav-upper ul {
     float: right;
     display: table;
-    padding: 5px;
 }
 
 .navbar-inverse.nav-upper .navbar-upper>li {
@@ -16,11 +15,6 @@
 
 .navbar-inverse.nav-upper .navbar-upper>li>a {
     color: #e90052;
-}
-
-.standings {
-    margin: 10%;
-    background-color: #00ff87;
 }
 
 .navi {
@@ -48,6 +42,11 @@
     z-index: 1051;
 }
 
+.standings {
+    margin: 10%;
+    background-color: #00ff87;
+}
+
 .club-logo {
     height: 30px;
     width: 30px;
@@ -60,13 +59,38 @@
 }
 
 .leftside {
-    width: 70%;
-    height: 900px;
-    background-color: #38003c;
+    width: 60%;
+    padding-right: 5%;
 }
 
 .rightside {
-    width: 30%;
-    height: 900px;
+    width: 40%;
+    padding-left: 5%;
+}
+
+.mission {
+    width: 80%;
+    height: 100px;
+}
+
+.missiontxt {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+.funcs {
+    height: 400px;
+    width: 100%;
+    background-color: #00ff87;
+}
+
+.homepage {
     background-color: #38003c;
 }
+
+.middlestuff {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
