@@ -79,7 +79,104 @@
                     <h1 class="missiontxt">Quik Stat</h1>
                     <p class="missiontxt">this is our mission statement to explain how important we are to making the world a better place</p>
                 </div>
-                <div class=funcs></div>
+                <div class=funcs>
+                    <div class="leftSide">
+                        <div class="btn-group searchButton">
+                            <button class="btn btn-primary btn-lg btn-block dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Team 1  </button>
+                            <div class="dropdown-menu dropdown-menu-left">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action">Man Utd</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Arsenal</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Liverpool</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Tottenham</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Chelsea</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Man City</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Arsenal</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Liverpool</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Tottenham</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Chelsea</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Man City</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Arsenal</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Liverpool</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Tottenham</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Chelsea</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Newcastle</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Arsenal</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Liverpool</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Blackburn</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Chelsea</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightSide">
+                        <div class="btn-group searchButton">
+                            <button class="btn btn-primary btn-lg btn-block dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Team 2  </button>
+                            <div class="dropdown-menu dropdown-menu-left">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action">Man Utd</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Arsenal</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Liverpool</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Tottenham</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Chelsea</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Man City</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Arsenal</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Liverpool</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Tottenham</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Chelsea</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Man City</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Arsenal</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Liverpool</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Tottenham</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Chelsea</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Newcastle</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Arsenal</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Liverpool</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Blackburn</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Chelsea</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class='startdate'>
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker6'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='enddate'>
+                            <div class="form-group ">
+                                <div class='input-group date ' id='datetimepicker7'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(function() {
+                            $('#datetimepicker6').datetimepicker();
+                            $('#datetimepicker7').datetimepicker({
+                                useCurrent: false //Important! See issue #1075
+                            });
+                            $("#datetimepicker6").on("dp.change", function(e) {
+                                $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+                            });
+                            $("#datetimepicker7").on("dp.change", function(e) {
+                                $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+                            });
+                        });
+                    </script>
+                </div>
             </div>
             <div class="rightside col-xs-6 col-sm-4 col-lg-2">
                 <div class="standings">
