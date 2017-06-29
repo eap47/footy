@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+  <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="team.css">
+  <title>Burnley</title>
+  <script type="text/javascript" src="jquery/dist/jQuery.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+</head>
+
+<body>
+<nav>
+    <div id="lowernav">
+      <img id="headerImage" src="https://resources-pl.pulselive.com/ver/i/elements/premier-league-logo-header.svg">
+      <div id="teamsmenu">
+        <a href="Bournemouth.html"><img class="teamlogos" src="https://upload.wikimedia.org/wikipedia/de/4/41/Afc_bournemouth.svg"></a>
+        <a href="Arsenal.html"><img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"></a>
+        <a href="Brighton.html"><img class="teamlogos" src="https://upload.wikimedia.org/wikipedia/en/f/fd/Brighton_&_Hove_Albion_logo.svg"></a>
+        <a href="Burnley.html"><img class="teamlogos" src="https://upload.wikimedia.org/wikipedia/en/0/02/Burnley_FC_badge.png"></a>
+        <a href="Chelsea.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/5/5c/Chelsea_crest.svg"></a>
+        <a href="Palace.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/b/bf/Crystal_Palace_F.C._logo_(2013).png"></a>
+        <a href="Everton.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/f/f9/Everton_FC.svg"></a>
+        <a href="Huddersfield.html"> <img class="teamlogos" src="https://upload.wikimedia.org/wikipedia/en/5/5a/Huddersfield_Town_A.F.C._logo.svg"></a>
+        <a href="Leicester.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/en/6/63/Leicester02.png"></a>
+        <a href="Liverpool.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/0/0a/FC_Liverpool.svg"></a>
+        <a href="ManCity.html"> <img class="teamlogos" src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"></a>
+        <a href="ManUnited.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/d/da/Manchester_United_FC.svg"></a>
+        <a href="Newcastle.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/5/56/Newcastle_United_Logo.svg"></a>
+        <a href="Southampton.html"> <img  class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/c/c9/FC_Southampton.svg"></a>
+        <a href="Stoke.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/a/a3/Stoke_City.svg"></a>
+        <a href="Swansea.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/a/ab/Swansea_City_Logo.svg"></a>
+        <a href="Tottenham.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/b/b4/Tottenham_Hotspur.svg"></a>
+        <a href="Watford.html"> <img class="teamlogos" src="https://upload.wikimedia.org/wikipedia/en/e/e2/Watford.svg"></a>
+        <a href="WestBrom.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/8/8b/West_Bromwich_Albion.svg"></a>
+        <a href="WestHam.html"> <img class="teamlogos" src="http://upload.wikimedia.org/wikipedia/de/e/e0/West_Ham_United_FC.svg"></a>
+      </div>
+    </div>
+    <ul id="navmenu">
+      <li><a href="/index.html">Home Page</a></li>
+
+      <li><a href="/news.html">Football News</a></li>
+    </ul>
+  </nav>
+  <section class="team" id="team">
+    <section class="night-life teamrow" id="night-life">
+      <div class="row teamDetails">
+      </div>
+    </section>
+    <section class="teamStats1 teamrow" id="teamStats1">
+      <div class="row statsRow">
+      </div>
+    </section>
+  </section>
+
+
+
+<script id="statColumns-template" type="text/x-handlebars-template">
+  <div class="column leftStats">
+    <div class="upcomingFixtures ">
+      <div class="list-group noborder">
+        <li class="list-group-item list-group-item-action headerr noborder" style="background-color: {{color2}}">
+          Upcoming fixtures
+        </li>
+        <div class="fixtures"></div>
+      </div>
+    </div>
+  </div>
+  <div class="column rightStats">
+    <div class="squadSheet">
+      <div class="list-group">
+        <li class="list-group-item list-group-item-action headerr noborder" style="background-color: {{color2}}">
+          Current Squad
+        </li>
+        <div class="players"> </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+
+
+
+
+
+    <script id="teamDetails-template" type="text/x-handlebars-template">
+      <div class="column left">
+        <li class="teamName"><span id="teamName">{{Team}}</span><img id="teamLogo" src="{{Logo_url}}"></li>
+        <li id="teamDetails">Stadium: {{Stadium}}</li>
+        <li id="teamDetails">Capacity: {{Capacity}}</li>
+        <div id="alltimeThrophies">
+          <li id="teamDetails">Trophies:</li>
+          <li id="epltrophies" class="trophycase"></li>
+          <li id="factrophies" class="trophycase"></li>
+          <li id="efltrophies" class="trophycase"></li>
+          <li id="ucltrophies" class="trophycase"></li>
+          <li id="ueltrophies" class="trophycase"></li>
+        </div>
+      </div>
+
+      <div class="column right">
+        <div id="stadium"></div>
+        <iframe width="90%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBMu9NYJuE-uc2hg4OvMpSunzmuNUjXVNM&center={{Latitude}},{{Longitude}}&zoom=17&maptype=satellite" allowfullscreen>
+        </iframe>
+      </div>
+    </script>
+
+
+    <script id="squadPlayer" type="text/x-handlebars-template">
+      <li class="list-group-item list-group-item-action fixtRow">
+        <div class="squadNumber">{{jerseyNumber}}</div>
+        <div class="squadPosition">{{position}}</div>
+        <div class="squadName">{{name}}</div>
+        <div class="squadDOB">{{dateOfBirth}}</div>
+        <div class="squadNationality">{{nationality}}</div>
+      </li>
+    </script>
+
+
+    <script id="fixtures" type="text/x-handlebars-template">
+      <li class="list-group-item list-group-item-action fixtRow">
+        <div class="date">{{date}}</div>
+        <div class="homeTeam">{{homeTeamName}} -</div>
+        <div class="awayTeam">{{awayTeamName}}</div>
+      </li>
+    </script>
+
+
+    <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="handlebars/dist/handlebars.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
